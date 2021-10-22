@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 node('master')
 {
    stage('Continuous Download')
