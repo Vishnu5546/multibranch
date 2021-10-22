@@ -8,7 +8,7 @@ pipeline
          steps
        {
          git 'https://github.com/keshavr21/maven_test.git'
-         sh 'echo "hello world"'
+         sh 'echo "Hello World Welcome"'
        }
       }
     }
