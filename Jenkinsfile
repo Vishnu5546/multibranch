@@ -1,12 +1,14 @@
-node('master')
+pipeline
 {
-  stage('Continuous Download')
-  {
-    git 'https://github.com/keshavr21/maven_test.git'
-  }
-  stage('Continuous Build')
-  {
-    sh 'mvn package'
-    sh 'echo "Hello World"'
-  }
-} 
+    agent any
+    stages
+    {
+        stage('ContinuousDownload')
+        {
+            steps
+            {
+                git 'https://github.com/intelliqittrainings/maven.git'
+            }
+        }
+    }
+}
