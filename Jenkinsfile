@@ -7,5 +7,6 @@ node('master')
   stage('Continuous Build')
   {
     sh 'mvn package'
+    sh 'echo "Hello World"'
   }
 } 
